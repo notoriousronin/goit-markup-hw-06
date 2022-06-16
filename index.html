@@ -399,10 +399,32 @@
           </ul>
         </div>
       </div>
+      <form>
+        <label for="subscribe">Подпишитесь на рассылку</label>
+        <input type="email" name="email" id="subscribe" placeholder="E-mail" />
+        <button class="submit-btn" type="submit">
+          <svg class="telegram-icon">
+            <use href="./images/icons.svg#telegram"></use></svg
+          >Подписаться
+        </button>
+      </form>
     </footer>
     <!-- Модальное Окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          <div class="form-group" role="group" aria-labelledby="contact-details-head">
+            <p id="contact-details-head">Оставьте свои данные, мы вам перезвоним</p>
+            <label>
+              Имя
+              <input type="text" name="username" />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="tel"
+            /></label>
+          </div>
+        </form>
         <button data-modal-close class="close-button">
           <svg class="close-icon">
             <use href="./images/icons.svg#icon-close"></use>

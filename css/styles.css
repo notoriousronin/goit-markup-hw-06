@@ -805,3 +805,14 @@ ul {
   width: 11px;
   height: 11px;
 }
+
+/*--------------------- Формы----------------------- */
+.submit-btn {
+  background-color: var(--accent-color);
+}
+
+.telegram-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--header-bg-color);
+}
