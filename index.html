@@ -412,18 +412,36 @@
     <!-- Модальное Окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form">
+        <form class="form" autocomplete="on">
           <div class="form-group" role="group" aria-labelledby="contact-details-head">
             <p id="contact-details-head">Оставьте свои данные, мы вам перезвоним</p>
-            <label>
-              Имя
+            <div class="form-field">
+              <label>Имя</label>
               <input type="text" name="username" />
-            </label>
-            <label>
-              Телефон
-              <input type="tel" name="tel"
-            /></label>
+            </div>
+            <div class="form-field">
+              <label>Телефон</label>
+              <input type="tel" name="tel" />
+            </div>
+            <div class="form-field">
+              <label>Почта</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="form-field">
+              <label for="comment">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
           </div>
+          <input type="checkbox" name="accept" />
+          <label for="accept"
+            >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+          >
+          <button type="submit">Отправить</button>
         </form>
         <button data-modal-close class="close-button">
           <svg class="close-icon">

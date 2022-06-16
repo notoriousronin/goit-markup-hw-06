@@ -816,3 +816,12 @@ ul {
   height: 24px;
   fill: var(--header-bg-color);
 }
+
+textarea {
+  resize: none;
+}
+
+.form-group {
+  width: 448px;
+  height: 342px;
+}
