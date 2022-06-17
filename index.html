@@ -398,50 +398,73 @@
             </li>
           </ul>
         </div>
+
+        <div class="">
+          <h2 class="join-title">Подпишитесь на рассылку</h2>
+          <form>
+            <label for="email" class="subscribe-label">
+              <input
+                class="subscribe-form"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="submit-btn" type="submit">
+              Подписаться
+              <svg class="telegram-icon">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-      <form>
-        <label for="subscribe">Подпишитесь на рассылку</label>
-        <input type="email" name="email" id="subscribe" placeholder="E-mail" />
-        <button class="submit-btn" type="submit">
-          <svg class="telegram-icon">
-            <use href="./images/icons.svg#telegram"></use></svg
-          >Подписаться
-        </button>
-      </form>
     </footer>
     <!-- Модальное Окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form class="form" autocomplete="on">
+        <form class="modal-form" autocomplete="on">
           <div class="form-group" role="group" aria-labelledby="contact-details-head">
-            <p id="contact-details-head">Оставьте свои данные, мы вам перезвоним</p>
+            <h2 class="modal-form-title" id="contact-details-head">
+              Оставьте свои данные, мы вам перезвоним
+            </h2>
+
             <div class="form-field">
               <label>Имя</label>
               <input type="text" name="username" />
             </div>
+
             <div class="form-field">
               <label>Телефон</label>
               <input type="tel" name="tel" />
             </div>
+
             <div class="form-field">
               <label>Почта</label>
               <input type="email" name="email" />
             </div>
-            <div class="form-field">
+
+            <div class="form-field area">
               <label for="comment">Комментарий</label>
               <textarea
+                class="comment"
                 name="comment"
                 id="comment"
-                rows="10"
+                rows="5"
                 placeholder="Введите текст"
               ></textarea>
             </div>
+
+            <div class="accept">
+              <input type="checkbox" name="accept" />
+              <label for="accept"
+                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+              >
+            </div>
+            <div class="modal-btn"></div>
+            <button type="submit">Отправить</button>
           </div>
-          <input type="checkbox" name="accept" />
-          <label for="accept"
-            >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
-          >
-          <button type="submit">Отправить</button>
         </form>
         <button data-modal-close class="close-button">
           <svg class="close-icon">
