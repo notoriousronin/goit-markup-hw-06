@@ -425,46 +425,55 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form" autocomplete="on">
-          <div class="form-group" role="group" aria-labelledby="contact-details-head">
-            <h2 class="modal-form-title" id="contact-details-head">
-              Оставьте свои данные, мы вам перезвоним
-            </h2>
-
-            <div class="form-field">
-              <label>Имя</label>
-              <input type="text" name="username" />
-            </div>
-
-            <div class="form-field">
-              <label>Телефон</label>
-              <input type="tel" name="tel" />
-            </div>
-
-            <div class="form-field">
-              <label>Почта</label>
-              <input type="email" name="email" />
-            </div>
-
-            <div class="form-field area">
-              <label for="comment">Комментарий</label>
-              <textarea
-                class="comment"
-                name="comment"
-                id="comment"
-                rows="5"
-                placeholder="Введите текст"
-              ></textarea>
-            </div>
-
-            <div class="accept">
-              <input type="checkbox" name="accept" />
-              <label for="accept"
-                >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
-              >
-            </div>
-            <div class="modal-btn"></div>
-            <button type="submit">Отправить</button>
+          <h2 class="modal-form-title" id="contact-details-head">
+            Оставьте свои данные, мы вам перезвоним
+          </h2>
+          <div class="form-field">
+            <label class="label-form" for="name">Имя</label>
+            <input type="text" name="username" class="form-input" id="name" />
+            <span class="icon-form">
+              <svg class="modal-icon person" width="12" height="12">
+                <use href="./images/icons.svg#icon-personform"></use>
+              </svg>
+            </span>
           </div>
+          <div class="form-field">
+            <label class="label-form" for="tel">Телефон</label>
+            <input type="tel" name="tel" class="form-input" id="tel" />
+            <span class="icon-form">
+              <svg class="modal-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-telform"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-field">
+            <label class="label-form" for="mail">Почта</label>
+            <input type="email" name="email" class="form-input" id="mail" />
+            <span class="icon-form">
+              <svg class="modal-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-mailform"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="form-field area">
+            <label for="comment">Комментарий</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              rows="5"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <label class="checkbox-label">
+            <input class="checkbox-form" type="checkbox" name="checkbox" />
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a class="accept-link" href="">Условия договора</a>
+            </span>
+          </label>
+          <button class="modal-btn" type="submit">Отправить</button>
         </form>
         <button data-modal-close class="close-button">
           <svg class="close-icon">
