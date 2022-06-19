@@ -851,6 +851,7 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 10px 28px;
+  align-items: center;
 
   color: var(--header-bg-color);
   background-color: var(--accent-color);
