@@ -916,6 +916,7 @@ textarea {
 
 .accept-link {
   color: var(--accent-color);
+  position: relative;
 }
 
 .comment {
